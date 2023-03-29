@@ -11,7 +11,16 @@ module.exports = withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    color: {
+        extends: {
+            colors:{
+                green: {
+                    brighter: "#1DE54F",
+                    darker: "#36BE58"
+                },
+            }
+        }
+    }
   },
   plugins: [],
 })
