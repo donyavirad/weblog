@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Montserrat-Regular;
+        src: url("/fonts/Montserrat-Regular.ttf");
+    }
+    @font-face {
+        font-family: Montserrat-Medium;
+        src: url("/fonts/Montserrat-Medium.ttf");
+    }
+    @font-face {
+        font-family: Montserrat-Bold;
+        src: url("/fonts/Montserrat-Bold.ttf");
+    }
+    @font-face {
+        font-family: Lato-Bold;
+        src: url("/fonts/Lato-Bold.ttf");
+    }
+    @font-face {
+        font-family: Lato-Regular;
+        src: url("/fonts/Lato-Regular.ttf");
+    }
+}

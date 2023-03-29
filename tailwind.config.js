@@ -18,6 +18,13 @@ module.exports = withMT({
                 darker: "#36BE58"
             },
         },
+        fontFamily: {
+            "Montserrat-Regular": "Montserrat-Regular",
+            "Montserrat-Medium": "Montserrat-Medium",
+            "Montserrat-Bold": "Montserrat-Bold",
+            "Lato-Bold": "Lato-Bold",
+            "Lato-Regular": "Lato-Regular",
+        }
     }
   },
   plugins: [],
