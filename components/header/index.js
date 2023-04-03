@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
-import Hamberger from "./hamberger";
+import MenuIcon from "./menu-icon";
 import Logo from "./logo";
 import NavbarList from "./navbar";
 import Notification from "./notification";
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="px-4">
             <header className="flex flex-col py-4 border-b border-gray-400">
                 <div className="flex justify-between items-center">
-                    <Hamberger openNav={openNav} setOpenNav={setOpenNav}/>
+                    <MenuIcon openNav={openNav} setOpenNav={setOpenNav}/>
                     <Logo />
                     <Notification />
                 </div>
