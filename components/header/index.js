@@ -8,7 +8,7 @@ import Subscribe from "./subscribe";
 
 const Header = () => {
     const mediaLg = useMediaQuery("lg");
-    const [openNav, setOpenNav] = useState(false)
+    const [openNav, setOpenNav] = useState(false);
     if (mediaLg) {
         return (
             <div className="px-8">
@@ -24,13 +24,18 @@ const Header = () => {
         <div className="px-4">
             <header className="flex flex-col py-4 border-b border-gray-400">
                 <div className="flex justify-between items-center">
-                    <MenuIcon openNav={openNav} setOpenNav={setOpenNav}/>
+                    <MenuIcon openNav={openNav} setOpenNav={setOpenNav} />
                     <Logo />
                     <Notification />
                 </div>
-                <div>
-                    <NavbarList  openNav={openNav}/>
-                </div>
+                {openNav ? (
+                    <div className="flex flex-col space-y-2">
+                        <NavbarList />
+                        <Subscribe />
+                    </div>
+                ) : (
+                    ""
+                )}
             </header>
         </div>
     );
