@@ -1,3 +1,5 @@
+import Carousel from "./carousel";
+
 const Hero = () => {
     return (
         <div className="flex justify-between items-center">
@@ -5,7 +7,7 @@ const Hero = () => {
                 <div>
                     <span>My Experience Blog</span>
                 </div>
-                <div>casousel</div>
+                <Carousel/>
                 <div>search</div>
             </div>
             <div>Hero Image</div>
