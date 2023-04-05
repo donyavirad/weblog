@@ -1,4 +1,5 @@
 import Carousel from "./carousel";
+import Search from "./search";
 
 const Hero = () => {
     return (
@@ -8,7 +9,9 @@ const Hero = () => {
                     <span>My Experience Blog</span>
                 </div>
                 <Carousel/>
-                <div>search</div>
+                <div>
+                    <Search/>
+                </div>
             </div>
             <div>Hero Image</div>
         </div>
