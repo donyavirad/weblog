@@ -26,7 +26,7 @@ const Carousel = () => {
         },
     ];
     return (
-        <div className="w-full lg:w-72 ">
+        <div>
             <Swiper
                 slidesPerView={1}
                 pagination={{
