@@ -6,17 +6,19 @@ import Search from "./search";
 const Hero = () => {
     return (
         <Container>
-            <div className="flex justify-between items-center">
-                <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col-reverse justify-between items-center py-8 lg:flex-row lg:space-x-16 lg:py-12">
+                <div className="flex flex-col justify-center w-full lg:w-2/5">
                     <div>
-                        <span>My Experience Blog</span>
+                        <span className="text-gray-800">My Experience Blog</span>
                     </div>
                     <Carousel />
-                    <div>
+                    <div className="mt-4">
                         <Search />
                     </div>
                 </div>
-                <HeroImage />
+                <div className="mb-8 lg:mb-0">
+                    <HeroImage />
+                </div>
             </div>
         </Container>
     );
