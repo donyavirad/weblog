@@ -1,14 +1,14 @@
+import Container from "../UI/container";
+
 const Posts = () => {
     return (
-        <div>
+        <Container>
             <div>
-                posts
+                <div>posts</div>
+                <div>Load more</div>
             </div>
-            <div>
-                Load more
-            </div>
-        </div>
-    )
-}
+        </Container>
+    );
+};
 
-export default Posts
+export default Posts;
