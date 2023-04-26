@@ -9,7 +9,7 @@ const Posts = () => {
             <div className="flex flex-col items-center">
                 <div>
                     {posts.map((item) => (
-                        <div className="flex flex-col py-8 border-y border-gray-200 lg:flex-row-reverse lg:items-center lg:justify-between">
+                        <div key={item.id} className="flex flex-col py-8 border-y border-gray-200 lg:flex-row-reverse lg:items-center lg:justify-between">
                             <div className="mb-4 lg:m-0 lg:w-2/5">
                                 <Image src={item.image.url} fill={true} alt={item.image.alt} className="!static !h-[unset]" />
                             </div>
