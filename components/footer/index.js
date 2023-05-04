@@ -1,5 +1,11 @@
+import SubscribeEmail from "./SubscribeEmail";
+
 const Footer = () => {
-    return <div>Footer</div>;
+    return (
+        <div>
+            <SubscribeEmail />
+        </div>
+    );
 };
 
 export default Footer;
